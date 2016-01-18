@@ -1,8 +1,6 @@
 #-*- encoding:utf-8 -*-
 
-import sys
 import urllib2
-from bs4 import BeautifulSoup
 import re
 import pdb
 import shutil
@@ -16,7 +14,7 @@ print """
       """
 print "Model list"
 print '1:change hosts for google/facebook/twitter...'
-print '2:resore origin hosts'
+print '2:restore origin hosts'
 choice_model = raw_input("select model\r\n")
 
 
@@ -47,7 +45,12 @@ def restore_hosts():
 
 if __name__ == "__main__":
     model_list = {"1": change_host,"2": restore_hosts}
-    model_list[choice_model]()
+    try:
+        model_list[choice_model]()
+    except IOError, e:
+        print e
+        print "Please use the root to open"
+        exit()
     raw_input("Success !!! \r\npress any key exit")
 
 
