@@ -7,11 +7,13 @@ import shutil
 import os
 
 print """
+		**
         ********************
         * Power by Kenji   *
         *        2016.1.18 *
         ********************
       """
+	  
 print "Model list"
 print '1:change hosts for google/facebook/twitter...'
 print '2:restore origin hosts'
