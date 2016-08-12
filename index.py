@@ -51,6 +51,7 @@ if __name__ == "__main__":
         print e
         print "Please use the root to open"
         exit()
+	os.system("ipconfig/flushdns")
     raw_input("Success !!! \r\npress any key exit")
 
 
