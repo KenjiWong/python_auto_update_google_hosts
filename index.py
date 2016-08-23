@@ -15,7 +15,7 @@ print """
       """
 	  
 print "Model list"
-print '1:change hosts for google/facebook/twitter... maybe github will not connect'
+print '1:change hosts for google/facebook/twitter... maybe github will not connect..'
 print '2:restore origin hosts'
 choice_model = raw_input("select model\r\n")
 
